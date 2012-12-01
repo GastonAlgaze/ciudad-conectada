@@ -28,9 +28,7 @@ namespace ciudad_conectada.Services
 
         private NotificationsService()
         {
-            var client = new MongoClient();
-            var server = client.GetServer();
-            
+            var server = MongoServer.Create("mongodb://127.0.0.1");
             Database = server.GetDatabase("ciudadconectada");
         }
 
