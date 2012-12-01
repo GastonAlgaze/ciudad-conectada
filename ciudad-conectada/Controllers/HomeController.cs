@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using ciudad_conectada.Models;
+using ciudad_conectada.Services;
 
 namespace ciudad_conectada.Controllers
 {
@@ -18,6 +20,17 @@ namespace ciudad_conectada.Controllers
         public ActionResult About()
         {
             return View();
+        }
+
+        public ActionResult LoadNotifications()
+        {
+            return View();
+        }
+
+        public ActionResult AddNotification(Notification notification)
+        {
+            NotificationsService.Instance.AddNotification(notification);
+            return Json(null);
         }
     }
 }

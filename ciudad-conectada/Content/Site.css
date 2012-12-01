@@ -211,6 +211,12 @@ input[type="submit"] {
     padding: 5px;
 }
 
+label 
+{
+    width: 100px;
+    display: inline-block;
+}
+
 /* TABLE
 ----------------------------------------------------------*/
 
