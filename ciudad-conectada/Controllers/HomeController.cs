@@ -33,5 +33,10 @@ namespace ciudad_conectada.Controllers
             NotificationsService.Instance.AddNotification(notification);
             return Json(null);
         }
+
+        public ActionResult GetNotifications(Position position)
+        {
+            return Json (NotificationsService.Instance.GetNotifications(position));
+        }
     }
 }

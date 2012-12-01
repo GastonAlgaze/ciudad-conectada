@@ -36,8 +36,14 @@ namespace ciudad_conectada.Services
 
         public void AddNotification(Notification notification)
         {
-            var collection = Database.GetCollection<dynamic>("Notifications");
+            var collection = Database.GetCollection<Notification>("Notifications");
             collection.Insert(notification);
+        }
+
+        public IList<Notification> GetNotifications(Position position)
+        {
+            var collection = Database.GetCollection<Notification>("Notifications");
+            return collection.FindAll().ToList();
         }
     }
 }
