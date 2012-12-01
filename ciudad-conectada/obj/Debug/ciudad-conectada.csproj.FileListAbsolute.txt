@@ -1,0 +1,7 @@
+c:\users\v-ezeqs\documents\visual studio 2010\Projects\ciudad-conectada\ciudad-conectada\bin\ciudad-conectada.dll
+c:\users\v-ezeqs\documents\visual studio 2010\Projects\ciudad-conectada\ciudad-conectada\bin\ciudad-conectada.pdb
+c:\users\v-ezeqs\documents\visual studio 2010\Projects\ciudad-conectada\ciudad-conectada\bin\EntityFramework.dll
+c:\users\v-ezeqs\documents\visual studio 2010\Projects\ciudad-conectada\ciudad-conectada\bin\EntityFramework.xml
+c:\users\v-ezeqs\documents\visual studio 2010\Projects\ciudad-conectada\ciudad-conectada\obj\Debug\ciudad-conectada.csprojResolveAssemblyReference.cache
+c:\users\v-ezeqs\documents\visual studio 2010\Projects\ciudad-conectada\ciudad-conectada\obj\Debug\ciudad-conectada.dll
+c:\users\v-ezeqs\documents\visual studio 2010\Projects\ciudad-conectada\ciudad-conectada\obj\Debug\ciudad-conectada.pdb
