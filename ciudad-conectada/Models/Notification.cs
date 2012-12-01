@@ -5,7 +5,7 @@ using System.Web;
 
 namespace ciudad_conectada.Models
 {
-    public class Notification
+    public class Notification : MongoObject
     {
         public string UserName { get; set; }
         public string Text { get; set; }

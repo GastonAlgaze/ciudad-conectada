@@ -8,7 +8,9 @@
 <label>Username:</label><input type="text" id="username" name="username" /><br />
 <label>Text:</label><input type="text" id="text" name="text" /><br />
 <label>Position:</label><input type="text" id="lat" name="lat" /><input type="text" id="lon" name="lon" /><br />
-<input type="button" id="create" value="Create" />
+<input type="button" id="create" value="Create" /><br />
+<br />
+<input type="button" id="getnotifications" value="Get Notifications" />
 
 
 <script language=javascript>
@@ -20,6 +22,22 @@
                 Lat: $("#lat").val(),
                 Lon: $("#lon").val()
             }
+        });
+    });
+
+    $("#getnotifications").click(function () {
+        $.ajax({
+          url: "/Home/GetNotifications",
+          dataType: 'json',
+          data: {
+            Position: {
+                Lat: 45.000,
+                Lon: 54.000
+            }
+          },
+          success: function (data) {
+            alert(data);
+          }
         });
     });
 </script>
