@@ -28,9 +28,10 @@ namespace ciudad_conectada.Services
 
         private NotificationsService()
         {
-            var connectionString = "mongo://@localhost:27017/ciudad-conectada?auto_reconnect";
-            var server = MongoServer.Create(connectionString);
-            Database = server.GetDatabase("ciudad-conectada");
+            var client = new MongoClient();
+            var server = client.GetServer();
+            
+            Database = server.GetDatabase("ciudadconectada");
         }
 
         public void AddNotification(Notification notification)

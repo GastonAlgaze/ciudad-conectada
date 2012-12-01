@@ -9,3 +9,17 @@
 <label>Text:</label><input type="text" id="text" name="text" /><br />
 <label>Position:</label><input type="text" id="lat" name="lat" /><input type="text" id="lon" name="lon" /><br />
 <input type="button" id="create" value="Create" />
+
+
+<script language=javascript>
+    $("#create").click(function () {
+        $.post("/Home/AddNotification", {
+            UserName: $("#username").val(),
+            Text: $("#text").val(),
+            Position: {
+                Lat: $("#lat").val(),
+                Lon: $("#lon").val()
+            }
+        });
+    });
+</script>
