@@ -2,7 +2,6 @@
 <html>
 <head>
     <title>@ViewBag.Title</title>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -10,6 +9,7 @@
 
     <!-- Le styles -->
     <link href="../../Content/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="../../Content/custom-styles.css" rel="stylesheet" type="text/css" />
     <style type="text/css">
       body {
         padding-top: 60px;
@@ -32,11 +32,55 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+
+    <!-- fin codigo gmaps -->
     <script type="text/javascript"
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUXjb3CUImSVszshmaUFgIWiHJG6DuSZY&sensor=false">
     </script>
+    <script type="text/javascript">
+        var initialLocation;
+        var siberia = new google.maps.LatLng(60, 105);
+        var newyork = new google.maps.LatLng(40.69847032728747, -73.9514422416687);
+        var browserSupportFlag = new Boolean();
+
+        function initialize() {
+            var myOptions = {
+                zoom: 17,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+
+            // Try W3C Geolocation (Preferred)
+            if (navigator.geolocation) {
+                browserSupportFlag = true;
+                navigator.geolocation.getCurrentPosition(function (position) {
+                    initialLocation = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+                    map.setCenter(initialLocation);
+                }, function () {
+                    handleNoGeolocation(browserSupportFlag);
+                });
+            }
+            // Browser doesn't support Geolocation
+            else {
+                browserSupportFlag = false;
+                handleNoGeolocation(browserSupportFlag);
+            }
+
+            function handleNoGeolocation(errorFlag) {
+                if (errorFlag == true) {
+                    alert("Geolocation service failed.");
+                    initialLocation = newyork;
+                } else {
+                    alert("Your browser doesn't support geolocation. We've placed you in Siberia.");
+                    initialLocation = siberia;
+                }
+                map.setCenter(initialLocation);
+            }
+        }
+    </script>
+    <!-- fin codigo gmaps -->
 </head>
-<body>
+<body onload="initialize()">
 
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
