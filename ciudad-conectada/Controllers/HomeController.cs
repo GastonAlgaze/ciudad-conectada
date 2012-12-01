@@ -27,6 +27,7 @@ namespace ciudad_conectada.Controllers
             return View();
         }
 
+        [HttpPost]
         public ActionResult AddNotification(Notification notification)
         {
             NotificationsService.Instance.AddNotification(notification);

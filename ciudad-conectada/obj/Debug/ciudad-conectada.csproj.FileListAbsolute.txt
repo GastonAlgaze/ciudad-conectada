@@ -12,3 +12,11 @@ C:\Users\v-ezeqs\Documents\GitHub\ciudad-conectada\ciudad-conectada\bin\EntityFr
 C:\Users\v-ezeqs\Documents\GitHub\ciudad-conectada\ciudad-conectada\obj\Debug\ciudad-conectada.csprojResolveAssemblyReference.cache
 C:\Users\v-ezeqs\Documents\GitHub\ciudad-conectada\ciudad-conectada\obj\Debug\ciudad-conectada.dll
 C:\Users\v-ezeqs\Documents\GitHub\ciudad-conectada\ciudad-conectada\obj\Debug\ciudad-conectada.pdb
+C:\Users\v-ezeqs\Documents\GitHub\ciudad-conectada\ciudad-conectada\bin\MongoDB.Bson.dll
+C:\Users\v-ezeqs\Documents\GitHub\ciudad-conectada\ciudad-conectada\bin\MongoDB.Driver.dll
+C:\Users\v-ezeqs\Documents\GitHub\ciudad-conectada\ciudad-conectada\bin\Newtonsoft.Json.dll
+C:\Users\v-ezeqs\Documents\GitHub\ciudad-conectada\ciudad-conectada\bin\MongoDB.Bson.pdb
+C:\Users\v-ezeqs\Documents\GitHub\ciudad-conectada\ciudad-conectada\bin\MongoDB.Bson.xml
+C:\Users\v-ezeqs\Documents\GitHub\ciudad-conectada\ciudad-conectada\bin\MongoDB.Driver.pdb
+C:\Users\v-ezeqs\Documents\GitHub\ciudad-conectada\ciudad-conectada\bin\MongoDB.Driver.xml
+C:\Users\v-ezeqs\Documents\GitHub\ciudad-conectada\ciudad-conectada\bin\Newtonsoft.Json.xml
